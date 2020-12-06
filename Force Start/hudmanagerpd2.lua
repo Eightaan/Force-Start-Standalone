@@ -1,5 +1,5 @@
-    local set_slot_ready_orig = HUDManager.set_slot_ready
-
+local set_slot_ready_orig = HUDManager.set_slot_ready
+local force_ready_clicked = 0
 	function HUDManager:set_slot_ready(peer, peer_id, ...)
 		set_slot_ready_orig(self, peer, peer_id, ...)
 
